@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Box</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        
+        function accept(){
+            let input=document.getElementById("input").value;
+            if(input==''){
+                alert("Enter a Question")
+                let input=document.getElementById("input").value='';
+            }
+            else if(input=="How are You?"){
+                alert("Not a Valid Question")
+                let input=document.getElementById("input").value='';
+                 
+            }else if(input=="What is your Name?"){
+                alert("Not a Valid Question")
+                
+                let input=document.getElementById("input").value='';
+            }else if(input=="What is your Age?"){
+                alert("Not a Valid Question")
+                let input=document.getElementById("input").value='';
+            }
+            else if(input=="Where Are You From?"){
+                alert("Not a Valid Question")
+                let input=document.getElementById("input").value='';
+            }else if(input=="What is Your Pet Name?"){
+                alert("Not a Valid Question")
+                let input=document.getElementById("input").value='';
+            }
+            
+            else{
+                alert("Accept")
+                
+                let input=document.getElementById("input").value='';
+            }
+        }
+        function decline(){
+            alert("Question Decline")
+            
+            let input=document.getElementById("input").value='';
+            
+
+        }
+    </script>
+</head>
+<body>
+    
+   
+        
+    <div class="container">
+        <img src="images/logo.png" alt="img">
+        <h3>Ask Me a Question</h3>
+        <input type="text" placeholder="type Something..." id="input">
+       
+            <div style="display: flex;">
+                <button class="btn1" onclick="accept()">
+                    Accept
+                </button>
+                <button class="btn2" onclick="decline()">
+                    Decline
+                </button>
+            </div>
+           
+      
+    </div>
+
+</body>
+</html>
